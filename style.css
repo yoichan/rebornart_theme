@@ -1,12 +1,73 @@
 /*
-Template: xeory_extension
+Template: baskerville
 Theme Name: rebornart
 Description: reborntart用のテーマ
 Author: Yayoi Ito
 Version: 1.0
 */
 
-@import url("../xeory_extension/style.css");
-h2 {
-    color: red;
+@import url("../baskerville/style.css");
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+/*
+#main {
+	max-width: 100%;
+	margin: -3.05em auto 0;
+	clear: both;
+	background: rgba(0,0,0,0.8);
+	padding: 0 3% 2%;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+.menu a {
+    color: white;
+}
+
+*/
+
+
+.header {
+    height: 600px;
+}
+
+.header .cover {
+    background: rgba(29,29,29,0);
+}
+
+.header .header-inner {
+    display: none;
+}
+
+.home .post-header {
+    display: none;
+}
+
+.home .post-content {
+    padding: 0px;
+}
+
+.home .section-inner {
+    margin: 0px;
+    max-width:100%;
+}
+
+.home .medium-padding {
+    padding: 0px;
+}
+
+.home .panel-row-style {
+    padding: 5% 10%;
+}
+
+.home .panel-row-style h3 {
+    font-family: 'Lobster', cursive;
+}
+
+.even-row {
+    background-color: #f1f1f1;
+}
+
+.odd-row {
+    background-color: #ffffff;
 }
