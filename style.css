@@ -21,17 +21,15 @@ Version: 1.0
     display: none;
 }
 
+.bg-dark {
+    background-color: black;
+}
 .home .post-header {
     display: none;
 }
 
 .home .post-content {
     padding: 0px;
-}
-
-.home .section-inner {
-    margin: 0px;
-    max-width:100%;
 }
 
 .home .medium-padding {
