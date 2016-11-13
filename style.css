@@ -24,6 +24,11 @@ Version: 1.0
 .bg-dark {
     background-color: black;
 }
+
+.credits {
+    background-image: url("http://localhost:8080/wp-content/uploads/2016/11/スクリーンショット-2016-11-13-8.03.10.png");
+}
+
 .home .post-header {
     display: none;
 }
