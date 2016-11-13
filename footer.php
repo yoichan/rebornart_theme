@@ -120,20 +120,14 @@
 
 <?php endif; ?>
 
-<div class="credits section bg-dark small-padding">
+<div class="credits section bg-dark medium-padding">
 
 	<div class="credits-inner section-inner">
 
 		<p class="credits-left fleft">
 		
-			&copy; <?php echo date("Y") ?> <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a><span> &mdash; <?php printf( __( 'Powered by <a href="%s">WordPress</a>', 'baskerville'), 'http://www.wordpress.org' ); ?></span>
+			<span>Copyright&copy; 日本ふるさと手しごと協会 All rights reserved.</span>
 		
-		</p>
-		
-		<p class="credits-right fright">
-			
-			<span><?php printf( __( 'Theme by <a href="%s">Anders Noren</a>', 'baskerville'), 'http://www.andersnoren.se' ); ?> &mdash; </span><a class="tothetop" title="<?php _e('To the top', 'baskerville'); ?>" href="#"><?php _e('Up', 'baskerville' ); ?> &uarr;</a>
-			
 		</p>
 		
 		<div class="clear"></div>
