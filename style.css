@@ -8,24 +8,6 @@ Version: 1.0
 
 @import url("../baskerville/style.css");
 @import url('https://fonts.googleapis.com/css?family=Lobster');
-/*
-#main {
-	max-width: 100%;
-	margin: -3.05em auto 0;
-	clear: both;
-	background: rgba(0,0,0,0.8);
-	padding: 0 3% 2%;
-	overflow: hidden;
-	position: relative;
-	z-index: 1;
-}
-
-.menu a {
-    color: white;
-}
-
-*/
-
 
 .header {
     height: 600px;
@@ -62,6 +44,18 @@ Version: 1.0
 
 .home .panel-row-style h3 {
     font-family: 'Lobster', cursive;
+    text-transform: none;
+    display: inline-block;
+    position: relative;
+}
+
+.home .panel-row-style h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    border-bottom: 3px solid #daa520;
 }
 
 .even-row {
