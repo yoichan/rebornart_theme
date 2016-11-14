@@ -71,3 +71,7 @@ Version: 1.0
 .odd-row {
     background-color: #ffffff;
 }
+
+.home .foogallery-simple_portfolio .bf-item {
+    background-color: transparent;
+}
