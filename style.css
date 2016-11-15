@@ -76,3 +76,23 @@ Version: 1.0
 .home .foogallery-simple_portfolio .bf-item {
     background-color: transparent;
 }
+
+.home .emphasize {
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    text-transform: none;
+}
+
+/*
+.home .before-after .foogallery-container .bf-item::first-line {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 40px solid #daa520;
+}
+*/
