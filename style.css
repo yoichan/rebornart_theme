@@ -83,6 +83,15 @@ Version: 1.0
     text-transform: none;
 }
 
+.home .member .bf-caption p {
+    text-align: center;
+    line-height: normal;
+}
+
+.home .member .bf-caption p:first-line {
+    line-height: 200%;
+}
+
 /*
 .home .before-after .foogallery-container .bf-item::first-line {
     content: "";
