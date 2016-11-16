@@ -9,6 +9,7 @@ Version: 1.0
 @import url("../baskerville/style.css");
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
+
 .header {
     height: 600px;
 }
@@ -62,11 +63,11 @@ Version: 1.0
     left: 0;
     right: 0;
     bottom: -10px;
-    border-bottom: 3px solid #daa520;
+    border-bottom: 3px solid #d3bf66;
 }
 
 .even-row {
-    background-color: #f1f1f1;
+    background-color: #eeeef0;
 }
 
 .odd-row {
