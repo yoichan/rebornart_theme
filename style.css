@@ -37,6 +37,15 @@ Version: 1.0
     text-align: center;
 }
 
+.menu-en {
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    text-transform: none;
+    color: #b3a156;
+    text-align: center;
+    margin-top: 5px;
+}
+
 .home .post-header {
     display: none;
 }
