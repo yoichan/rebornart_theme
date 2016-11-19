@@ -94,6 +94,45 @@ Version: 1.0
 }
 
 /*
+ * テーブル設定
+ */
+.home table > tbody > tr > td {
+    border: 5px solid #eeeef0;
+}
+.home table > thead > tr > th {
+    border: 5px solid #eeeef0;
+}
+
+/*
+ * 料金表テーブル
+ */
+.home table.table-receipt thead > tr > th {
+    color: #ffffff;
+    background-color: #333333;
+}
+.home table.table-receipt tbody > tr > td {
+    background-color: #ffffff;
+    vertical-align: middle;
+}
+.home table.table-receipt tbody > tr:last-child > td {
+    background-color: #b3b3b3;
+}
+
+/*
+ * 団体情報テーブル
+ */
+.home table.table-association tbody > tr > td {
+    background-color: #ffffff;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    vertical-align: middle;
+}
+.home table.table-association tbody > tr > td:first-child {
+    color: #ffffff;
+    background-color: #333333;
+}
+
+/*
 .home .before-after .foogallery-container .bf-item::first-line {
     content: "";
     position: absolute;
