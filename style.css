@@ -37,6 +37,9 @@ Version: 1.0
     text-align: center;
 }
 
+.mobile-menu a {
+    text-align: center;
+}
 .menu-en {
     font-family: 'Lobster', cursive;
     font-weight: normal;
