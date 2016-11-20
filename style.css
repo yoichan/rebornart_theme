@@ -98,16 +98,22 @@ Version: 1.0
     background-color: #ffffff;
 }
 
-.home .foogallery-simple_portfolio .bf-item {
-    background-color: transparent;
-}
-
 .home .emphasize {
     font-family: 'Lobster', cursive;
     font-weight: normal;
     text-transform: none;
 }
 
+/*
+ * ギャラリー関連
+ */
+.home .foogallery-simple_portfolio .bf-item {
+    background-color: transparent;
+}
+
+/*
+ * メンバーのキャプション設定
+ */
 .home .member .bf-caption p {
     text-align: center;
     line-height: normal;
@@ -118,7 +124,16 @@ Version: 1.0
 }
 
 /*
- * テーブル設定
+ * カテゴリーのキャプション設定
+ */
+.home .items .bf-caption p {
+    text-align: center;
+    font-weight: bold;
+    border-bottom: solid 1px;
+}
+
+/*
+ * テーブル関連
  */
 .home table > tbody > tr > td {
     border: 5px solid #eeeef0;
