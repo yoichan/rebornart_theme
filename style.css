@@ -133,6 +133,13 @@ Version: 1.0
 }
 
 /*
+ * カテゴリーの画像を丸くする
+ */
+.home .items img {
+    border-radius: 50%;
+}
+
+/*
  * テーブル関連
  */
 .home table > tbody > tr > td {
