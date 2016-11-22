@@ -15,7 +15,16 @@
 
     <body <?php body_class(); ?>>
 
-        <div class="header section small-padding bg-dark bg-image" style="background-image: url(<?php if (get_header_image() != '') : ?><?php header_image(); ?><?php else : ?><?php echo get_template_directory_uri() . '/images/header.jpg'; ?><?php endif; ?>);">
+        <div class="logo">
+            <img src="<?php echo esc_url( get_theme_mod( 'baskerville_logo' ) ); ?>"></img>
+        </div>
+        <div class="header section small-padding bg-image" style="background-image: url(
+            <?php if (get_header_image() != '') : ?>
+                <?php header_image(); ?>
+            <?php else : ?>
+                <?php echo get_template_directory_uri() . '/images/header.jpg'; ?>
+            <?php endif; ?>
+        );">
 
             <div class="cover"></div>
 
