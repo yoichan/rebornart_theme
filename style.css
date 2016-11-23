@@ -167,6 +167,21 @@ Version: 1.0
     text-transform: none;
 }
 
+.home .large {
+    font-size: 1.5em;
+}
+
+.home .smaller {
+    font-size: smaller;
+}
+
+.home img {
+    border: none;
+}
+
+.home .takumi-content {
+    margin: 20px 0 20px;
+}
 /*
  * ギャラリー関連
  */
