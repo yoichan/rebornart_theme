@@ -22,7 +22,7 @@ Version: 1.0
 .header .cover {
     width: 536px;
     background: rgba(0,0,0,0);
-    background-image: url("/wp-content/uploads/2016/11/title.png");
+    background-image: url("../../../wp-content/uploads/2016/11/title.png");
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -51,7 +51,7 @@ Version: 1.0
     height: 80px;
     line-height: 80px;
     width: 100%;
-    background-image: url("/wp-content/uploads/2016/11/header_bg.png");
+    background-image: url("../../../wp-content/uploads/2016/11/header_bg.png");
     background-position: center center;
     text-align: center;
     vertical-align: middle;
