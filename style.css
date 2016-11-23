@@ -123,6 +123,36 @@ Version: 1.0
     border-bottom: 3px solid #d3bf66;
 }
 
+.home h4 {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 25px 0 10px;
+}
+
+.home ol.contact-list > li {
+    margin-top: 0;
+}
+
+.mail-button {
+    display: block;
+    background-color: #d3bf66;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.mail-button > a {
+    color: white;
+    border-bottom: solid 1px;
+}
+.mail-button > i {
+    color: white;
+    margin-right: 5px;
+}
+
 .even-row {
     background-color: #eeeef0;
 }

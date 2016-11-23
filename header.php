@@ -11,6 +11,7 @@
 
         <?php wp_head(); ?>
 
+        <script src="https://use.fontawesome.com/aa9894bbbb.js"></script>
     </head>
 
     <body <?php body_class(); ?>>
