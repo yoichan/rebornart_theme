@@ -14,10 +14,22 @@ Version: 1.0
     padding: 0;
 }
 
-.header .section {
+.home .wrapper.section {
     padding: 0;
 }
 
+.home .section-inner {
+    max-width: 100%;
+    width: 100%;
+}
+
+.nav-toggle.fleft.hidden {
+    margin: 0 5%;
+}
+
+.home .panel-grid .panel-row-style {
+    padding: 5% 15%;
+}
 
 .header .cover {
     width: 536px;
@@ -266,6 +278,11 @@ Version: 1.0
     }
     .header > .cover {
         width: 50%;
+    }
+}
+@media(max-width: 1000px){
+    .home .panel-grid .panel-row-style {
+        padding: 5% 5%;
     }
 }
 /*
