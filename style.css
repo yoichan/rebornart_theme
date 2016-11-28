@@ -58,8 +58,8 @@ Version: 1.0
     color: white;
 }
 
-.main-menu > li > a:hover {
-    font-size: 1em;
+.main-menu > li:hover {
+    background-color: black;
 }
 
 .navigation {
