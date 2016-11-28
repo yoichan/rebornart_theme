@@ -54,6 +54,14 @@ Version: 1.0
     display: inline-block;
 }
 
+.main-menu > li > a {
+    color: white;
+}
+
+.main-menu > li > a:hover {
+    font-size: 1em;
+}
+
 .navigation {
     background: rgba(0,0,0,0.9);
 }
@@ -93,6 +101,7 @@ Version: 1.0
 
 .mobile-menu a {
     text-align: center;
+    color: white;
 }
 .menu-en {
     font-family: 'Lobster', cursive;
