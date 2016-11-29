@@ -12,6 +12,7 @@
         <?php wp_head(); ?>
 
         <script src="https://use.fontawesome.com/aa9894bbbb.js"></script>
+        <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico">
     </head>
 
     <body <?php body_class(); ?>>
