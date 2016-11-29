@@ -296,6 +296,17 @@ Version: 1.0
         padding: 5% 5%;
     }
 }
+
+@media(max-width: 800px){
+    .bg-image.header {
+        height: 400px;
+        background-size: cover;
+    }
+    .header > .cover {
+        max-width: 400px;
+        width: 90%;
+    }
+}
 /*
 .home .before-after .foogallery-container .bf-item::first-line {
     content: "";
