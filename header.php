@@ -16,7 +16,7 @@
     </head>
 
     <body <?php body_class(); ?>>
-
+<?php include("tags/facebook.php"); ?>
         <div class="logo">
             <img src="<?php echo esc_url( get_theme_mod( 'baskerville_logo' ) ); ?>"></img>
         </div>
