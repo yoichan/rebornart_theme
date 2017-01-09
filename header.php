@@ -29,7 +29,11 @@
             <?php endif; ?>
         );">
 
-            <div class="cover"></div>
+            <div class="cover">
+                <div class="link-button">
+                    <a href="https://goo.gl/forms/shGJAkEtuWBduoPV2" target="_blank">相談してみる</a>
+                </div>
+            </div>
 
             <div class="header-search-block bg-graphite hidden">
 
