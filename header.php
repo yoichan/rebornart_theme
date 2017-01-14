@@ -18,9 +18,11 @@
 
     <body <?php body_class(); ?>>
         <?php include_once("tags/analyticstracking.php") ?>
-        <div class="logo">
-            <img src="<?php echo esc_url( get_theme_mod( 'baskerville_logo' ) ); ?>"></img>
-        </div>
+        <a href="/">
+            <div class="logo">
+                <img src="<?php echo esc_url( get_theme_mod( 'baskerville_logo' ) ); ?>"></img>
+            </div>
+        </a>
 
 
 <?php if ( is_home() || is_front_page() ) : //KVはHomeのみ表示 ?>
