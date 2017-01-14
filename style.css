@@ -328,6 +328,10 @@ Version: 1.0
 }
 */
 
+
+/*
+ * 投稿ページの設定
+ */
 .content {
     margin: auto;
 }
@@ -336,4 +340,11 @@ Version: 1.0
 }
 .nocomments {
     display: none;
+}
+
+div.post-header::after {
+    content: none !important;
+}
+div.post-header::before {
+    content: none !important;
 }
