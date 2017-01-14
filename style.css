@@ -334,3 +334,6 @@ Version: 1.0
 .content .post {
     box-shadow: none;
 }
+.nocomments {
+    display: none;
+}
