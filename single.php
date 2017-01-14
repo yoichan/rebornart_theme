@@ -10,7 +10,7 @@
 										
 	<div class="section-inner">
 	
-		<div class="content fleft">
+		<div class="content">
 												        
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						
@@ -267,8 +267,6 @@
 			</div> <!-- /post -->
 		
 		</div> <!-- /content -->
-		
-		<?php get_sidebar(); ?>
 		
 		<div class="clear"></div>
 		

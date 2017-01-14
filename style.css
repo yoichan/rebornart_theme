@@ -327,3 +327,10 @@ Version: 1.0
     border-left: 40px solid #daa520;
 }
 */
+
+.content {
+    margin: auto;
+}
+.content .post {
+    box-shadow: none;
+}
