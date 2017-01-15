@@ -181,6 +181,7 @@ Version: 1.0
     background: rgba(211,191,102, 1.0);
     color: white;
     border: none;
+    text-decoration: none;
 }
 
 .even-row {
