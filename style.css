@@ -365,14 +365,18 @@ div.post-header::before {
     content: none !important;
 }
 
-h1 {
+.single h1.post-title {
     position: relative;
     padding: .25em 0 .5em .75em;
     border-left: 10px solid #ccc;
     font-size: 30px;
 }
 
-h1::before {
+.single h1.post-title {
+    font-size: 30px;
+}
+
+.single h1.post-title::before {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -382,7 +386,7 @@ h1::before {
     border-bottom: 2px solid #d3bf66;
 }
 
-h1::after {
+.single h1.post-title::after {
     position: absolute;
     left: -10px;
     bottom: 0;
@@ -392,12 +396,12 @@ h1::after {
     background-image: url("./images/h1.png");
 }
 
-h2 {
+.post-content h1 {
     position: relative;
     padding:  .5em .75em;
 }
 
-h2::before {
+.post-content h1::before {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -407,13 +411,13 @@ h2::before {
     border-bottom: 2px solid #d3bf66;
 }
 
-h3 {
+.post-content h2 {
     position: relative;
     padding: .5em .75em;
     border-left: 10px solid #ccc;
 }
 
-h3::before {
+.post-content h2::before {
     position: absolute;
     left: -10px;
     bottom: 0;
