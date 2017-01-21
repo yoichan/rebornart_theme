@@ -369,6 +369,7 @@ h1 {
     position: relative;
     padding: .25em 0 .5em .75em;
     border-left: 10px solid #ccc;
+    font-size: 30px;
 }
 
 h1::before {
