@@ -166,6 +166,10 @@ Version: 1.0
     margin-top: 0;
 }
 
+.link-button {
+    margin: 20px;
+}
+
 .link-button > a {
     display: block;
     background: rgba(211,191,102, 0.9);
@@ -365,6 +369,10 @@ div.post-header::before {
     content: none !important;
 }
 
+.single .featured-media {
+    padding-bottom: 20px;
+}
+
 .single h1.post-title {
     position: relative;
     padding: .25em 0 .5em .75em;
@@ -373,7 +381,7 @@ div.post-header::before {
 }
 
 .single h1.post-title {
-    font-size: 30px;
+    font-size: 1.6em;
 }
 
 .single h1.post-title::before {
@@ -399,6 +407,7 @@ div.post-header::before {
 .post-content h1 {
     position: relative;
     padding:  .5em .75em;
+    font-size: 1.5em;
 }
 
 .post-content h1::before {
@@ -415,6 +424,7 @@ div.post-header::before {
     position: relative;
     padding: .5em .75em;
     border-left: 10px solid #ccc;
+    font-size: 1.4em;
 }
 
 .post-content h2::before {
@@ -425,4 +435,8 @@ div.post-header::before {
     width: 10px;
     height: 100%;
     background-color: #333;
+}
+
+.post-content h3 {
+    font-size: 1.3em;
 }
