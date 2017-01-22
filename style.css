@@ -141,6 +141,7 @@ Version: 1.0
     display: inline-block;
     position: relative;
     border-left: none;
+    font-size: 1.7em;
 }
 
 .home .panel-row-style h3::before {
@@ -438,7 +439,7 @@ div.post-header::before {
 }
 
 .post-content h3 {
-    font-size: 1.7em;
+    font-size: 1.3em;
 }
 
 /*
