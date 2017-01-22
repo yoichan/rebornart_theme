@@ -440,3 +440,70 @@ div.post-header::before {
 .post-content h3 {
     font-size: 1.3em;
 }
+
+/*
+ * 最新記事一覧横並び
+ */
+div.side-by-side {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.side-by-side ul.rpwe-ul {
+    display:table;
+    table-layout:fixed;
+    width:100%;
+    margin: auto;
+}
+
+.side-by-side li.rpwe-li {
+    display: table-cell;
+    padding: 5%;
+}
+
+.side-by-side h3.rpwe-li {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.side-by-side h3.rpwe-title::after {
+    content: none;
+}
+
+.side-by-side h3.rpwe-title {
+    line-height: 2.5em;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.side-by-side a {
+    color: black;
+    font-size: 1.5em;
+    border-bottom: solid 1px;
+}
+
+.side-by-side a:hover {
+    color: black;
+    text-decoration: none;
+    filter:alpha(opacity=60);
+    opacity:0.6;
+}
+
+.side-by-side img.rpwe-aligncenter.rpwe-thumb {
+    width: 100%;
+}
+
+.side-by-side img.rpwe-aligncenter.rpwe-thumb:hover {
+    filter:alpha(opacity=80);
+    opacity:0.8;
+}
+
+.side-by-side div.rpwe-summary {
+    line-height: 130%;
+    font-size: .8em;
+}
+
+@media(max-width: 500px){
+    .side-by-side li.rpwe-li {
+        display: block;
+    }
+}
