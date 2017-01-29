@@ -6,6 +6,7 @@ Author: Yayoi Ito
 Version: 1.0
 */
 
+
 @import url("../baskerville/style.css");
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
@@ -505,6 +506,44 @@ div.side-by-side {
 
 @media(max-width: 500px){
     .side-by-side li.rpwe-li {
+        display: block;
+    }
+}
+
+div.img-new-post {
+    display:table;
+    table-layout:fixed;
+    width:100%;
+    margin: auto;
+}
+.img-new-post div.post {
+    display: table-cell;
+    padding: 5%;
+}
+.img-new-post img {
+    width: 100%;
+}
+.img-new-post .description {
+    margin-top: 15px;
+}
+.img-new-post .category a {
+    background-color: #b3a156;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.img-new-post .title {
+    text-decoration: underline;
+    margin: 5px;
+}
+.img-new-post .summary {
+    font-size: 0.8em;
+}
+
+@media(max-width: 500px){
+    .img-new-post div.post {
         display: block;
     }
 }

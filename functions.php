@@ -1,5 +1,12 @@
 <?php
+/*
+ * thumbnailのサイズ設定
+ */
+add_image_size('thumbnail_300x300', 300, 300, true);
 
+/*
+ * 画像つきの最新の投稿のウィジェット
+ */
 class NewPostWithImg_Widget extends WP_Widget {
     /*コンストラクタ*/
     /*自作ウィジェットを登録するみたいな感じ*/
@@ -47,31 +54,48 @@ class NewPostWithImg_Widget extends WP_Widget {
             echo $before_title . $title . $after_title;
         }
 ?>
-        <ul class="img-new-post clearfix">
+        <div class="img-new-post clearfix">
 <?php
         $posts = get_posts(array('posts_per_page' => $instance['limit']));
         foreach ($posts as $post):
             setup_postdata($post);
 ?>
-            <li>
-                <?php if( has_post_thumbnail() ): ?>
-                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(400,400) ); ?></a>
-                <?php else: ?>
-                <a href="<?php the_permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/images/no-image.jpg" alt=""></a>
-                <?php endif; ?>
-                <div>
-                    <p>
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
-                        <span class="img-new-post-date"><?php echo get_the_date('Y/n/j'); ?></span>
-                    </p>
+            <div class="post">
+                <a href="<?php the_permalink(); ?>">
+                     <?php if( has_post_thumbnail() ): ?>
+                     <?php the_post_thumbnail('thumbnail_300x300');?>
+                     <?php else: ?>
+                     <img src="<?php bloginfo('template_url'); ?>/images/no-image.jpg" alt="">
+                     <?php endif; ?>
+                </a>
+                <div class="description">
+                    <div class="category"><?php the_category(' '); ?></div>
+                    <div class="title"><?php the_title(); ?></div>
+                    <div class="summary"><?php the_excerpt(); ?></div>
                 </div>
-            </li>
+            </div>
         <?php endforeach; ?>
-        </ul>
+        </div>
 <?php
         wp_reset_postdata();
         echo $after_widget;
     }
 }
-/*自作ウィジェットを使えるようにする処理*/
 register_widget('NewPostWithImg_Widget');
+
+/*
+ * もっと読むのリンク
+ * */
+function new_excerpt_more_jp( $more ) {
+    return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">...もっと読む</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more_jp');
+
+/* 
+ * 親テーマのいらないフックを外す
+ * 上書きしたいフックで親テーマの登録を削除したいときはここに追加していく
+ * */
+function child_theme_setup() {
+    remove_filter( 'excerpt_more', 'new_excerpt_more');
+}
+add_action( 'after_setup_theme', 'child_theme_setup' );
