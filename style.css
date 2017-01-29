@@ -527,17 +527,21 @@ div.img-new-post {
 .img-new-post .description {
     margin-top: 15px;
 }
-.img-new-post .category a {
+.img-new-post .category strong {
     background-color: #b3a156;
     color: white;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 5px 5px 0;
     font-size: 0.8em;
     font-weight: bold;
 }
 .img-new-post .title {
     text-decoration: underline;
-    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.img-new-post .title a {
+    color: #444;
 }
 .img-new-post .summary {
     font-size: 0.8em;

@@ -69,8 +69,10 @@ class NewPostWithImg_Widget extends WP_Widget {
                      <?php endif; ?>
                 </a>
                 <div class="description">
-                    <div class="category"><?php the_category(' '); ?></div>
-                    <div class="title"><?php the_title(); ?></div>
+                    <div class="category"><strong><?php $cat = get_the_category(); $cat = $cat[0]; { echo $cat->cat_name; }  ?></strong></div>
+                    <div class="title">
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </div>
                     <div class="summary"><?php the_excerpt(); ?></div>
                 </div>
             </div>
