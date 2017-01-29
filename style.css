@@ -517,6 +517,7 @@ div.img-new-post {
     margin: auto;
 }
 .img-new-post div.post {
+    background-color: transparent;
     display: table-cell;
     padding: 5%;
 }
