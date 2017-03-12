@@ -140,13 +140,25 @@
 
 <script type="text/javascript">
     (function($){ $(function(){
-        $('a[href^="#"]').click(function(){
-            var speed = 500;
-            var href= $(this).attr("href");
-            var target = $(href == "#" || href == "" ? 'html' : href);
-            var position = target.offset().top;
-            $("html, body").animate({scrollTop:position}, speed, "swing");
-            return false;
+
+        //
+        // メニューのスムーススクロール
+        //
+        $('a[href*="#"]').not(".noScroll").click(function(){
+            hrefPageUrl = $(this).prop("href").split("#")[0]; //リンク先の#より前のURLを取得
+            currentUrl  = location.href.split("#")[0];        //現在のページの#より前を取得
+
+            //リンク先と現在のページが同じだったらスムーススクロールを実行
+            if(hrefPageUrl == currentUrl){
+            //リンク先の#からあとの値を取得
+                href = "#" + $(this).prop("href").split("#").pop();
+
+                var speed = 500;
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $("html, body").animate({scrollTop:position}, speed, "swing");
+                return false;
+            }
         });
     });})(jQuery);
 </script>
