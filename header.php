@@ -14,7 +14,7 @@
         <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico">
         <?php
             // タグ
-            if ( is_prod() ) include_once("tags/google_tagmanager.php");
+            include_once("tags/google_tagmanager.php");
             include_once("tags/wovn-translation.php");
         ?>
     </head>
@@ -22,7 +22,7 @@
     <body <?php body_class(); ?>>
         <?php
             // タグ
-            if ( is_prod() ) include_once("tags/google_tagmanager_noscript.php");
+            include_once("tags/google_tagmanager_noscript.php");
             include_once("tags/analyticstracking.php");
         ?>
 
