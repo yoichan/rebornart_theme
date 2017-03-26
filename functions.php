@@ -101,3 +101,10 @@ function child_theme_setup() {
     remove_filter( 'excerpt_more', 'new_excerpt_more');
 }
 add_action( 'after_setup_theme', 'child_theme_setup' );
+
+/*
+ * 本番環境かどうか
+ */
+function is_prod() {
+    return (home_url() === 'http://rebornart.jp');
+}

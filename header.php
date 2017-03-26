@@ -3,7 +3,6 @@
 <html <?php language_attributes(); ?>>
 
     <head>
-
         <meta charset="<?php bloginfo( 'charset' ); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
 
@@ -13,11 +12,20 @@
 
         <script src="https://use.fontawesome.com/aa9894bbbb.js"></script>
         <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico">
-        <?php include_once("tags/wovn-translation.php") ?>
+        <?php
+            // タグ
+            if ( is_prod() ) include_once("tags/google_tagmanager.php");
+            include_once("tags/wovn-translation.php");
+        ?>
     </head>
 
     <body <?php body_class(); ?>>
-        <?php include_once("tags/analyticstracking.php") ?>
+        <?php
+            // タグ
+            if ( is_prod() ) include_once("tags/google_tagmanager_noscript.php");
+            include_once("tags/analyticstracking.php");
+        ?>
+
         <a href="/">
             <div class="logo">
                 <img src="<?php echo esc_url( get_theme_mod( 'baskerville_logo' ) ); ?>"></img>
