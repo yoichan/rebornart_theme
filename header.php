@@ -17,6 +17,8 @@
             include_once("tags/google_tagmanager.php");
             include_once("tags/wovn-translation.php");
         ?>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
     </head>
 
     <body <?php body_class(); ?>>
@@ -32,23 +34,30 @@
             </div>
         </a>
 
-
-<?php if ( is_home() || is_front_page() ) : //KVはHomeのみ表示 ?>
-        <div class="header section small-padding bg-image" style="background-image: url(<?php header_image(); ?>);">
-            <div class="cover">
-                <div class="link-button">
-                    <a href="https://goo.gl/forms/shGJAkEtuWBduoPV2" target="_blank">相談してみる</a>
+        <?php if ( is_home() || is_front_page() ) : //KVはHomeのみ表示 ?>
+        <div class='target' data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+            <div class="header section small-padding bg-image" style="background-image: url(<?php header_image(); ?>);">
+                <div class="cover">
+                    <div class="link-button">
+                        <a href="https://goo.gl/forms/shGJAkEtuWBduoPV2" target="_blank">相談してみる</a>
+                    </div>
                 </div>
+                <div class="header-inner section-inner">
+                    <div class="blog-logo">
+                        <a class="logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
+                            <img src='<?php echo esc_url( get_theme_mod( 'baskerville_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>'>
+                        </a>
+                    </div>
+                </div> <!-- /header-inner -->
             </div>
-            <div class="header-inner section-inner">
-                <div class="blog-logo">
-                    <a class="logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
-                        <img src='<?php echo esc_url( get_theme_mod( 'baskerville_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>'>
-                    </a>
+            <div> <!-- KV2 -->
+                <a href='/'>
+                <div class="header section small-padding bg-image" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/dummy.jpg);">
                 </div>
-            </div> <!-- /header-inner -->
+                </a>
+            </div>
         </div> <!-- /header -->
-<?php endif; ?>
+        <?php endif; ?>
 
         <div class="navigation section no-padding bg-dark">
 
@@ -123,3 +132,4 @@
              </ul> <!-- /main-menu -->
 
         </div> <!-- /mobile-navigation -->
+
