@@ -34,13 +34,7 @@
 
 
 <?php if ( is_home() || is_front_page() ) : //KVはHomeのみ表示 ?>
-        <div class="header section small-padding bg-image" style="background-image: url(
-            <?php if (get_header_image() != '') : ?>
-                <?php header_image(); ?>
-            <?php else : ?>
-                <?php echo get_template_directory_uri() . '/images/header.jpg'; ?>
-            <?php endif; ?>
-        );">
+        <div class="header section small-padding bg-image" style="background-image: url(<?php header_image(); ?>);">
 
             <div class="cover">
                 <div class="link-button">
