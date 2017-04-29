@@ -41,33 +41,12 @@
                 </div>
             </div>
             <div class="header-inner section-inner">
-
-                <?php if ( get_theme_mod( 'baskerville_logo' ) ) : ?>
-
-                    <div class="blog-logo">
-
-                        <a class="logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
-                            <img src='<?php echo esc_url( get_theme_mod( 'baskerville_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>'>
-                        </a>
-
-                    </div>
-
-                <?php elseif ( get_bloginfo( 'description' ) || get_bloginfo( 'title' ) ) : ?>
-
-                        <h1 class="blog-title">
-                            <a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'title' ) ); ?></a>
-                        </h1>
-
-                        <?php if ( get_bloginfo( 'description' ) ) { ?>
-
-                            <h3 class="blog-description"><?php echo esc_attr( get_bloginfo( 'description' ) ); ?></h3>
-
-                        <?php } ?>
-
-                <?php endif; ?>
-
+                <div class="blog-logo">
+                    <a class="logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
+                        <img src='<?php echo esc_url( get_theme_mod( 'baskerville_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>'>
+                    </a>
+                </div>
             </div> <!-- /header-inner -->
-
         </div> <!-- /header -->
 <?php endif; ?>
 
