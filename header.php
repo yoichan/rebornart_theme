@@ -35,19 +35,11 @@
 
 <?php if ( is_home() || is_front_page() ) : //KVはHomeのみ表示 ?>
         <div class="header section small-padding bg-image" style="background-image: url(<?php header_image(); ?>);">
-
             <div class="cover">
                 <div class="link-button">
                     <a href="https://goo.gl/forms/shGJAkEtuWBduoPV2" target="_blank">相談してみる</a>
                 </div>
             </div>
-
-            <div class="header-search-block bg-graphite hidden">
-
-                <?php get_search_form(); ?>
-
-            </div> <!-- /header-search-block -->
-
             <div class="header-inner section-inner">
 
                 <?php if ( get_theme_mod( 'baskerville_logo' ) ) : ?>
