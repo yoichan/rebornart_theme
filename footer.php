@@ -160,8 +160,15 @@
                 return false;
             }
         });
+        // スライド
+        $('.target').slick({
+            autoplay : true,
+            speed: 5000,
+            fade: true
+        });
     });})(jQuery);
 </script>
 
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slick.min.js"></script>
 </body>
 </html>

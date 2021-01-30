@@ -300,11 +300,8 @@ Version: 1.0
 
 @media(max-width:1170px){
     .bg-image.header {
-        background-position: center center;
-        background-size: contain;
-        height: 0;
-        padding: 0;
-        padding-top: 47.52%;
+        height: 500px;
+        background-size: cover;
     }
     .header > .cover {
         width: 50%;
@@ -326,20 +323,6 @@ Version: 1.0
         width: 90%;
     }
 }
-/*
-.home .before-after .foogallery-container .bf-item::first-line {
-    content: "";
-    position: absolute;
-    bottom: 50%;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-right: 40px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 40px solid #daa520;
-}
-*/
-
 
 /*
  * 投稿ページの設定
